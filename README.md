@@ -4,49 +4,63 @@
 **Version**: 1.0.0 
 
 ## Overview
-<!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for this class. (i.e. What's your problem domain?) -->
+the user can login in the website and view his profile if he logged in 
+and the data depend on how are you
 
 ## Getting Started
-<!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
+ will start with clone repo in your local machine and bring the domain and clint from auth0
 
 ## Architecture
-<!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
+ReactJs
+Auth0
+Bootstrap 
 
-## Change Log
-<!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
+## Time Estimates
 
-01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
+Name of feature: Set up 
 
-## Credit and Collaborations
-<!-- Give credit (and a link) to other people or resources that helped you build this application. -->
+Estimate of time needed to complete: 15 min
 
+Start time: :2:30 pm
 
+Finish time: 3:10 pm
 
-Name of feature: set up the repo
+Actual time needed to complete: 40 min
 
-Estimate of time needed to complete: 10 min
-
-Start time: 2:30 pm
-
-Finish time: 2:45 pm
-
-Actual time needed to complete: 15 min
-
-
-
-
-
-
-
-
-
-
+___
 Name of feature: Authentication
 
-Estimate of time needed to complete: 60 min
+Estimate of time needed to complete: 120 min 
 
-Start time: 2:30 pm
+Start time: 6:30 pm
 
-Finish time: 2:45 pm
+Finish time: 8:30 pm
 
-Actual time needed to complete: 15 min
+Actual time needed to complete: 120 min
+
+## Logistical
+1. What hours will you be available to communicate?
+any time in the morning
+2. What platform will you use to communicate (ie. Slack, phone …)?
+Slack,Discord
+3. How often will you take breaks?
+thats depend
+4. What is your plan if you start to fall behind?
+i will take a breath and come stronger than before
+
+
+## Conflict Resolution
+1. What will your team do if one person is pulling all the weight while the other person is not contributing? 
+we will distribute the effort between each other  
+2. What will your team do if one person is taking over the project and not letting the other member contribute?
+I will talk to this person
+3. How will you approach each other and the challenge of building an application knowing that it is impossible for two people to be at the exact same place in understanding and skill level?
+We will distribute the tasks
+
+
+
+
+
+
+
+
