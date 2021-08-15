@@ -1,34 +1,32 @@
-import React from 'react';
-import Header from './Header';
-import IsLoadingAndError from './IsLoadingAndError';
-import Footer from './Footer';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from "react-router-dom";
+import React, { Component } from 'react';
+import Login from './components/Login';
+import Logout from './components/Logout';
+import Profile from './components/Profile';
 
-class App extends React.Component {
-
+import Home from './components/Home';
+import Nav from './components/Nav';
+import { withAuth0 } from '@auth0/auth0-react';
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+export class App extends Component {
   render() {
-    console.log('app', this.props);
-    return(
-      <>
+    return (
+      <div>
+        <Nav />
+        {this.props.auth0.isAuthenticated ? <Logout /> : <Login />}
         <Router>
-          <IsLoadingAndError>
-            <Header />
-            <Switch>
-              <Route exact path="/">
-                {/* TODO: if the user is logged in, render the `BestBooks` component, if they are not, render the `Login` component */}
-              </Route>
-              {/* TODO: add a route with a path of '/profile' that renders a `Profile` component */}
-            </Switch>
-            <Footer />
-          </IsLoadingAndError>
+          <Switch>
+          <Route path='/home'>
+             <Home/>
+            </Route>
+            <Route path='/profile'>
+              <Profile />
+            </Route>
+           
+          </Switch>
         </Router>
-      </>
+      </div>
     );
   }
 }
 
-export default App;
+export default withAuth0(App);
