@@ -1,28 +1,28 @@
 import React, { Component } from 'react';
 import Login from './components/Login';
-import Logout from './components/Logout';
-import Profile from './components/Profile';
 
-import Home from './components/Home';
-import Nav from './components/Nav';
+import Profile from './components/Profile';
+import BestBooks from './components/BestBooks';
+import Header from './components/Header';
+import Footer from './components/Footer';
 import { withAuth0 } from '@auth0/auth0-react';
-import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 export class App extends Component {
   render() {
     return (
       <div>
-        <Nav />
-        {this.props.auth0.isAuthenticated ? <Logout /> : <Login />}
+        
         <Router>
+          <Header />
           <Switch>
-          <Route path='/home'>
-             <Home/>
+            <Route exact path='/'>
+            {this.props.auth0.isAuthenticated ? <BestBooks/> : <Login />}
             </Route>
-            <Route path='/profile'>
+            <Route exact path='/profile'>
               <Profile />
             </Route>
-           
           </Switch>
+          <Footer />
         </Router>
       </div>
     );
